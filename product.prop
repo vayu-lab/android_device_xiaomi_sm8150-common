@@ -1,3 +1,16 @@
 # Audio
 ro.config.media_vol_steps=25
 ro.config.vc_call_vol_steps=7
+
+# Dalvik
+dalvik.vm.heapstartsize=8m
+dalvik.vm.heapsize=512m
+dalvik.vm.heaptargetutilization=0.75
+dalvik.vm.heapminfree=512k
+dalvik.vm.heapmaxfree=8m
+ro.control_privapp_permissions=enforce
+persist.vendor.qfp=true
+persist.vendor.radio.enableadvancedscan=true
+
+# Enable blurs
+ro.surface_flinger.supports_background_blur=1
