@@ -20,6 +20,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Include GSI keys
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
+#XIAOMIPARTS
+XIAOMIPARTS := XiaomiParts
+PRODUCT_PACKAGES += $(XIAOMIPARTS)
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
@@ -239,7 +243,7 @@ PRODUCT_COPY_FILES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    lights.msmnile
+    android.hardware.lights-service.xiaomi_msmnile
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
@@ -327,21 +331,15 @@ PRODUCT_PACKAGES += \
 # Rootdir
 PRODUCT_PACKAGES += \
     init.class_main.sh \
-    init.crda.sh \
-    init.mdm.sh \
     init.qcom.class_core.sh \
     init.qcom.coex.sh \
     init.qcom.early_boot.sh \
-    init.qcom.efs.sync.sh \
     init.qcom.post_boot.sh \
-    init.qcom.sdio.sh \
     init.qcom.sensors.sh \
     init.qcom.sh \
     init.qcom.usb.sh \
     init.qti.chg_policy.sh \
-    init.qti.dcvs.sh \
-    init.qti.qcv.sh \
-    qca6234-service.sh
+    init.qti.dcvs.sh
 
 PRODUCT_PACKAGES += \
     fstab.qcom \
