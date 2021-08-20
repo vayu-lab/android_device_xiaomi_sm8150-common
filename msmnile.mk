@@ -291,7 +291,8 @@ TARGET_COMMON_QTI_COMPONENTS := \
     media-legacy \
     perf \
     telephony \
-    usb
+    usb \
+    vibrator
 
 # RIL
 PRODUCT_PACKAGES += \
@@ -342,10 +343,6 @@ PRODUCT_PACKAGES += \
 # Vendor service manager
 PRODUCT_PACKAGES += \
     vndservicemanager
-
-# Vibrator
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.vibrator.service
 
 # WiFi
 PRODUCT_PACKAGES += \
