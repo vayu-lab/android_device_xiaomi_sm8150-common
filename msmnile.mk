@@ -295,7 +295,8 @@ TARGET_COMMON_QTI_COMPONENTS := \
     av \
     display \
     gps \
-    media-legacy
+    media-legacy \
+    perf
 
 # RIL
 PRODUCT_PACKAGES += \
