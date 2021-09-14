@@ -1,0 +1,5 @@
+# HwBinder IPC from client to server
+binder_call(hal_lineage_fod_client, hal_lineage_fod_server)
+
+# Allow binder communication with platform_app
+binder_call(hal_lineage_fod, platform_app)
