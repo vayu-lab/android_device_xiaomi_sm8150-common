@@ -249,7 +249,13 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_SOONG_NAMESPACES += \
     hardware/google/interfaces \
-    hardware/google/pixel
+    hardware/google/pixel \
+    vendor/qcom/opensource/audio-hal \
+    device/qcom/common \
+    hardware/qcom/display \
+    hardware/qcom/media \
+    vendor/qcom/common \
+    vendor/qcom/opensource/audio-hal/primary-hal
 	
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
