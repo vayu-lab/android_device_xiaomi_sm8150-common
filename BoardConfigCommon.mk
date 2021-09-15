@@ -154,7 +154,6 @@ endif # TARGET_USE_DYNAMIC_PARTITIONS
 # Platform
 BOARD_VENDOR := xiaomi
 BOARD_USES_QCOM_HARDWARE := true
-TARGET_BOARD_PLATFORM := msmnile
 
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/sys/touchpanel/double_tap"
